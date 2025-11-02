@@ -34,6 +34,6 @@ in {
       xclip # X11
     ]
     ++ lib.optionals stdenv.hostPlatform.isDarwin [
-      pbcopy
+      pbgopy
     ];
 }
