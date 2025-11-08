@@ -19,6 +19,8 @@ in {
   viAlias = true;
   vimAlias = true;
 
+  plugins.otter.enable = true;
+
   extraPackages = with pkgs;
     [
       ripgrep # better grep
