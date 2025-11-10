@@ -2,7 +2,15 @@
   plugins.lsp = {
     enable = true;
     servers = {
-      java_language_server.enable = true;
+      jdtls = {
+        enable = true;
+        settings = {
+          filetypes = [
+            "java"
+          ];
+        };
+      };
+
       tinymist.enable = true; # for typst
       bashls = {
         enable = true;
