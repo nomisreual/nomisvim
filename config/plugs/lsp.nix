@@ -2,7 +2,8 @@
   plugins.lsp = {
     enable = true;
     servers = {
-      tinymist.enable = true;
+      java_language_server.enable = true;
+      tinymist.enable = true; # for typst
       bashls = {
         enable = true;
       };
