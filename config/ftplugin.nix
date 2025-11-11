@@ -32,5 +32,12 @@
         tabstop = 2;
       };
     };
+    "after/ftplugin/java.lua" = {
+      opts = {
+        expandtab = true;
+        shiftwidth = 2;
+        tabstop = 2;
+      };
+    };
   };
 }

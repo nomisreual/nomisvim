@@ -17,6 +17,7 @@
         typescript = ["prettierd"];
         html = ["prettierd"];
         htmldjango = ["djlint"];
+        java = ["google-java-format"];
       };
       notify_on_error = true;
       format_on_save =
@@ -39,6 +40,9 @@
           end
         '';
       formatters = {
+        google-java-format = {
+          command = lib.getExe pkgs.google-java-format;
+        };
         shellcheck = {
           command = lib.getExe pkgs.shellcheck;
         };
